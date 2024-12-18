@@ -196,10 +196,10 @@ h4{
     box-shadow: 0px 0px  10px black;
 }
 .about_me{
-    width: auto;
-    padding: 100px 0px;
+    padding: 100px ;
     background-color: black;
     border: 5px solid #555;
+   
 }
 .about_me img{
     height: 500px;
@@ -320,9 +320,8 @@ h4{
     flex-direction: column;/* coloumn-vertical,row-horitonal*/
     align-items: center;/* vertical-up down */
     justify-content: center;/* horizontal-right left*/
+    box-shadow: 1px 1px  300px white;
     gap: 10px;
-    
-   
 }  
 .footer .author{
     font-size: 25px;
@@ -382,6 +381,7 @@ h4{
     justify-content: center;/* horizontal-right left*/
     display: flex;
     gap: 10px;
+    box-shadow: 1px 1px  100px red;
 
 
 }
