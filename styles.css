@@ -30,7 +30,7 @@ section {
   box-shadow: 1px 1px 300px white;
 }
 img {
-  box-shadow: 10px 10px 100px white;
+  box-shadow: 10px 10px 100px rgb(3, 135, 250);
   border-radius: 100%;
   /*border: 10px solid #555;*/
   float: right;
@@ -107,7 +107,7 @@ img {
   background-image: url(backpic.jpg);
   background-size: cover;
   background-position: center;
-  box-shadow: 10px 10px 100px red;
+  box-shadow: 10px 10px 100px rgb(3, 135, 250);
   border:5px solid #555;
 }
 .button:hover {
@@ -150,7 +150,7 @@ nav ul li a {
   text-decoration: none;
 }
 nav ul li a:hover {
-  color: red;
+  color: rgb(3, 135, 250);
   transition: 1s;
 }
 .button {
@@ -162,7 +162,7 @@ nav ul li a:hover {
   padding: 10px 30px;
 }
 .btn_talk {
-  background-color: red;
+  background-color: rgb(3, 135, 250);
   color: white;
   font-weight: bold;
   border-radius: 30px;
@@ -170,8 +170,8 @@ nav ul li a:hover {
   padding: 10px 30px;
 }
 .btn_talk:hover {
-  background-color: red;
-  border: 2px solid red;
+  background-color: rgb(3, 135, 250);
+  border: 2px solid rgb(3, 135, 250);
   cursor: pointer;
 }
 .content {
@@ -252,7 +252,7 @@ h4 {
   letter-spacing: 2px;
 }
 .about_content h5 {
-  color: white;
+  color: rgb(3, 135, 250);
   font-size: 30px;
   letter-spacing: 3px;
 }
@@ -353,7 +353,7 @@ h4 {
   flex-direction: column; /* coloumn-vertical,row-horitonal*/
   align-items: center; /* vertical-up down */
   justify-content: center; /* horizontal-right left*/
-  box-shadow: 1px 1px 30px white;
+  box-shadow: 1px 1px 30px rgb(3, 135, 250);
   gap: 10px;
 }
 .footer .author {
@@ -374,7 +374,7 @@ h4 {
 }
 .footer .social_media a {
   border-radius: 50%;
-  background-color: blue;
+  background-color: rgb(3, 135, 250);
   color: white;
   padding: 12px 16px;
   font-size: 16px;
@@ -408,7 +408,6 @@ h4 {
   justify-content: center; /* horizontal-right left*/
   display: flex;
   gap: 10px;
-  box-shadow: 1px 1px 100px red;
 }
 .allthing {
   display: flex;
@@ -457,7 +456,7 @@ h4 {
 }
 .bar .progress-line span {
   position: absolute;
-  background: #25b79f;
+  background: rgb(3, 135, 250);
   height: 100%;
   border-radius: 10px;
   transform: scaleX(0);
@@ -470,19 +469,19 @@ h4 {
   }
 }
 .progress-line .html {
-  width: 80%;
+  width: 90%;
 }
 .progress-line .css {
-  width: 70%;
+  width: 90%;
 }
 .progress-line .bootstrap {
-  width: 50%;
+  width: 90%;
 }
 .progress-line .javascript {
-  width: 50%;
+  width: 90%;
 }
 .progress-line .c {
-  width: 50%;
+  width: 90%;
 }
 .bar .progress-line span::before {
   position: absolute;
@@ -509,19 +508,19 @@ h4 {
   border-radius: 3px;
 }
 .progress-line .html::after {
-  content: "80%";
+  content: "90%";
 }
 .progress-line .css::after {
-  content: "70%";
+  content: "90%";
 }
 .progress-line .bootstrap::after {
-  content: "50%";
+  content: "90%";
 }
 .progress-line .javascript::after {
-  content: "50%";
+  content: "90%";
 }
 .progress-line .c::after {
-  content: "50%";
+  content: "90%";
 }
 
 @media only screen and (max-width: 600px) {
