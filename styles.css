@@ -6,11 +6,11 @@
   color: aliceblue;
   scroll-behavior: smooth;
 }
-html{
+html {
   width: 100%;
   overflow-x: hidden;
 }
-body{
+body {
   width: 100%;
   overflow-x: hidden;
 }
@@ -32,8 +32,11 @@ section {
 img {
   box-shadow: 10px 10px 100px white;
   border-radius: 100%;
-  border: 10px solid #555;
+  /*border: 10px solid #555;*/
+  float: right;
+  
 }
+
 
 .main {
   display: flex;
@@ -48,18 +51,17 @@ img {
   width: fit-content;
 }
 .main .content h1 {
-  font-size: 5em;
+  font-size: 2em;
 }
 
 .main .content h2 {
   color: #fff;
-  font-size: 2em;
-  font-weight: 500;
+  font-size: 4em;
 }
 
 .main .content h2 span {
-  font-size: 2.8em;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: 100;
 }
 /* .animated-text{
     position: relative;
@@ -106,6 +108,7 @@ img {
   background-size: cover;
   background-position: center;
   box-shadow: 10px 10px 100px red;
+  border:5px solid #555;
 }
 .button:hover {
   transform: scale(1.1);
@@ -118,10 +121,15 @@ img {
   transform: scale(1.1);
 }
 nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   display: flex;
   align-items: center;
   padding-right: 10%;
   padding-left: 10%;
+  box-shadow: #555;
 }
 nav ul {
   display: flex;
@@ -137,7 +145,7 @@ span {
   color: white;
 }
 nav ul li a {
-  color: white;
+  color:white;
   font-weight: bold;
   text-decoration: none;
 }
@@ -147,7 +155,7 @@ nav ul li a:hover {
 }
 .button {
   background-color: red;
-  color: white;
+  color: black;
   font-weight: bold;
   border-radius: 500em;
   text-decoration: none;
@@ -288,7 +296,7 @@ h4 {
   font-size: 15px;
   line-height: 30px;
   margin-bottom: 40px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .para .btn {
   background-color: red;
@@ -327,7 +335,6 @@ h4 {
   border-radius: 30px;
   transition: 0.5s;
   padding: 10px;
- 
 }
 .hire .btn:hover {
   background-color: transparent;
@@ -346,7 +353,7 @@ h4 {
   flex-direction: column; /* coloumn-vertical,row-horitonal*/
   align-items: center; /* vertical-up down */
   justify-content: center; /* horizontal-right left*/
-  box-shadow: 1px 1px 300px white;
+  box-shadow: 1px 1px 30px white;
   gap: 10px;
 }
 .footer .author {
@@ -406,11 +413,117 @@ h4 {
 .allthing {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: flex-start;
   width: 990px;
   list-style-type: none;
   margin-top: 10px;
+ 
 }
+.dev{
+  color: aqua;
+}
+.skills-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-bar {
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-bar .bar {
+  margin: 25px 0;
+}
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+  color: #f0f0e6;
+}
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.bar .progress-line span {
+  position: absolute;
+  background: #25b79f;
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.progress-line .html {
+  width: 80%;
+}
+.progress-line .css {
+  width: 70%;
+}
+.progress-line .bootstrap {
+  width: 50%;
+}
+.progress-line .javascript {
+  width: 50%;
+}
+.progress-line .c {
+  width: 50%;
+}
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #f0f0f0;
+}
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #07374a;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+.progress-line .html::after {
+  content: "80%";
+}
+.progress-line .css::after {
+  content: "70%";
+}
+.progress-line .bootstrap::after {
+  content: "50%";
+}
+.progress-line .javascript::after {
+  content: "50%";
+}
+.progress-line .c::after {
+  content: "50%";
+}
+
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
@@ -418,50 +531,63 @@ h4 {
   .main .content h1 {
     font-size: 1em;
   }
-  .about_me .main{
+  .main .content h2 {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  .about_me .main {
     flex-direction: column;
   }
   .about_me img {
     height: 300px;
-  
   }
-  .about_content{
+  .about_content {
     padding: 0px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center
-
+    text-align: center;
   }
-  .about_content h3{
-   font-size: 25px;
-   width: 100%;
-  
+  .about_content h3 {
+    font-size: 25px;
+    width: 100%;
   }
-  .about_me{
+  .about_me {
     padding: 10px;
   }
-  .box{
+  .box {
     flex-direction: column;
   }
-  .hire h3{
+  .hire h3 {
     padding: 0px 10px;
     text-align: center;
   }
-  .allthing{
+  .allthing {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
   }
-  
-  .button{
+  .main .content h2 span{
+    font-size: 2em;
+    font-weight: 100;
+  }
+
+  .button {
     padding: 10px 10px;
   }
-  nav{
+  nav {
     display: flex;
     align-items: center;
     padding-right: 10%;
     padding-left: 0%;
   }
+  .skills{
+    padding: 30px 5px;
+  }
+  .skills-bar{
+    padding: 15px 0px;
+  }
+  .skills-bar .bar .progress-line{
+    width: 350px;
+  }
 }
-
